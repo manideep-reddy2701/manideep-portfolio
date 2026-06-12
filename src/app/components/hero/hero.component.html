@@ -1,0 +1,42 @@
+<section id="hero">
+  <div class="hero-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+  </div>
+
+  <div class="container hero-content">
+    <p class="greeting">Hi there, I'm</p>
+    <h1>Manideep <span>Reddy</span></h1>
+    <div class="typewriter">
+      <span>{{ displayText() }}</span>
+      <span class="cursor">|</span>
+    </div>
+    <p class="tagline">
+      7+ years building scalable Angular SPAs and full-stack applications
+      across <strong>Banking</strong> and <strong>Telecom</strong> domains.
+    </p>
+
+    <div class="cta-group">
+      <button class="btn-primary" (click)="scrollTo('#projects')">
+        View My Work
+      </button>
+      <button class="btn-outline" (click)="scrollTo('#contact')">
+        Get In Touch
+      </button>
+    </div>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/manideep-reddy-0a493840/" target="_blank">LinkedIn</a>
+      <span>·</span>
+      <a href="https://github.com/manideep-reddy2701" target="_blank">GitHub</a>
+      <span>·</span>
+      <a href="mailto:manideepreddy0192@gmail.com">Email</a>
+    </div>
+  </div>
+
+  <div class="scroll-hint" (click)="scrollTo('#about')">
+    <div class="mouse">
+      <div class="wheel"></div>
+    </div>
+  </div>
+</section>

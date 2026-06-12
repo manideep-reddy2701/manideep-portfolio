@@ -1,0 +1,47 @@
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">About <span>Me</span></h2>
+    <div class="section-line"></div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm a Senior Full Stack Developer with <strong>7+ years of experience</strong>
+          specializing in Angular UI development. I've built production-grade enterprise
+          applications at <strong>Bank of America</strong> and <strong>Comcast</strong>,
+          working across Banking and Telecom domains.
+        </p>
+        <p>
+          My core strength is <strong>Angular</strong> — from AngularJS migrations to
+          modern Angular 17 with standalone components, RxJS pipelines, reactive forms,
+          and performance optimization. I complement this with solid backend skills in
+          Java Spring Boot and Node.js.
+        </p>
+        <p>
+          I'm passionate about building clean, maintainable component architectures
+          and delivering polished user experiences backed by robust APIs.
+        </p>
+
+        <div class="about-tags">
+          <span>Angular 17</span>
+          <span>TypeScript</span>
+          <span>RxJS</span>
+          <span>Spring Boot</span>
+          <span>Node.js</span>
+          <span>AWS</span>
+          <span>Docker</span>
+          <span>Kubernetes</span>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        @for (stat of stats; track stat.label) {
+          <div class="stat-card">
+            <div class="stat-value">{{ stat.value }}</div>
+            <div class="stat-label">{{ stat.label }}</div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

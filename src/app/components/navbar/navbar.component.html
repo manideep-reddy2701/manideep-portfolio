@@ -1,0 +1,21 @@
+<nav [class.scrolled]="isScrolled()">
+  <div class="container nav-inner">
+    <div class="logo" (click)="scrollTo('#hero')">
+      MR<span>.</span>
+    </div>
+
+    <ul class="nav-links" [class.open]="menuOpen()">
+      @for (link of navLinks; track link.label) {
+        <li>
+          <a (click)="scrollTo(link.href)">{{ link.label }}</a>
+        </li>
+      }
+    </ul>
+
+    <button class="hamburger" (click)="toggleMenu()" [class.open]="menuOpen()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
